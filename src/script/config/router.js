@@ -11,10 +11,10 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function($
             controller:'mainCtrl'
         })
         .state('artist',{
-        url:'/artist/:id',
-        templateUrl:'view/artist.html',
-        controller:'artistCtrl'
-    });
+            url:'/artist/:id',
+            templateUrl:'view/artist.html',
+            controller:'artistCtrl'
+        });
 
     $urlRouterProvider.otherwise('main')
 }]);

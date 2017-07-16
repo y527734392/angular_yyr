@@ -1,0 +1,105 @@
+.artist_base_info_wrap {
+	width: 85%;
+	height: 400/@mw;
+	margin: auto;
+	position: relative;
+	.artist_base_info {
+		padding: 120/@mw 0/@mw 50/@mw;
+		width: 85%;
+		height: 400/@mw;
+		margin: auto;
+		position: fixed;
+		.bg_mask {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 150%;
+			height: 150%;
+			margin-left: -25%;
+			margin-top: -5%;
+			background-size: 40%;
+			background-color: #fff;
+			background-repeat: no-repeat ;
+			background-position: center top;
+			background-attachment:fixed;
+			-webkit-filter: blur(15px);
+			filter: blur(15px);
+			z-index: 1;
+			&:after {
+				content: '';
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+			}
+
+		}
+		.abi_con {
+			width: 100%;
+			position: relative;
+			z-index: 2;
+			padding-bottom: 30/@mw;
+			border-bottom: 1/@mw solid rgba(136,136,136,0.7);
+			.abi_pic {
+				float: left;
+				margin-right: 20/@mw;
+				width: 140/@mw;
+				height: 140/@mw;
+				border-radius: 50%;
+				overflow: hidden;
+				img {
+					display: block;
+					width: 100%;
+					height:100%;
+				}
+			}
+			.abi_txt {
+				float: left;
+				h4 {
+					font-weight: normal;
+					font-size: 28/@mw;
+					line-height: 46/@mw;
+					color: @f;
+					padding-bottom: 15/@mw;
+				}
+				.genre {
+					font-size: 20/@mw;
+					color: @f;
+					padding-bottom: 15/@mw;
+					span {
+						line-height: 30/@mw;
+						padding: 0 10/@mw;
+						border:1/@mw solid @f;
+						border-radius: 10/@mw;
+					}
+				}
+				.signature {
+					font-size: 20/@mw;
+					line-height: 30/@mw;
+					color: @c;
+				}
+			}
+		}
+
+		.audience_con {
+			display: flex;
+			position: relative;
+			z-index: 2;
+			padding: 40/@mw 0;
+			li {
+				flex: 1;
+				text-align: center;
+				color: @f;
+				font-size: 18/@mw;
+				span {
+					border: 1/@mw solid @f;
+					padding: 0 10/@mw;
+					border-radius: 10/@mw;
+				}
+			}
+		}
+	}
+}

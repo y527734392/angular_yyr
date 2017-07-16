@@ -1,4 +1,5 @@
-<div class="head">
+
+<div ng-class="{'head on_bg': bg==='true', 'head on_border':border==='true', 'head on_bg on_border': bg==='true'&&border==='true', 'head': bg!=='true'&&border!=='true'}">
 	<div ng-show="back ==='false'" class="login_info clearfix">
 		<div class="artist_pic"><img src="/img/head/defulate.jpg" alt=""></div>
 		<p class="artist_name">爱音乐的小儿股</p>

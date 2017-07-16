@@ -1,13 +1,19 @@
 .head {
 	width: 100%;
 	height: 90/@mw;
-	background: @f;
 	line-height: 90/@mw;
-	border-bottom: 1/@mw solid #ddd;
 	position: fixed;
 	top:0;
 	left:0;
 	z-index: 10;
+	color: @f;
+	&.on_bg {
+		background: @f;
+		color: @0;
+	}
+	&.on_border {
+		border-bottom: 1/@mw solid #ddd;
+	}
 	.login_info {
 		position: relative;
 		z-index: 2;
@@ -50,7 +56,7 @@
 			height: 12px;
 			background-color: @c;
 			-webkit-transform: rotate(45deg);
-			margin-top: -8px;
+			margin-top: -10px;
 		}
 		&:after {
 			content: '';
@@ -61,7 +67,7 @@
 			height: 12px;
 			background-color: @c;
 			-webkit-transform: rotate(-45deg);
-			margin-top: 1px;
+			margin-top: -2px;
 		}
 	}
 	.head_title {

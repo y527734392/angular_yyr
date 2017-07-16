@@ -11,7 +11,9 @@ angular.module('app').directive('appHead',[function(){
         scope:{
             title: '@',
             back:'@',
-            bar:'@'
+            bar:'@',
+            bg:'@',
+            border:'@',
         },
         link:function($scope){
             $scope.goback = function(){

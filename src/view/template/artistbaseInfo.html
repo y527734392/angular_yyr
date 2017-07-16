@@ -1,0 +1,23 @@
+<div class="artist_base_info_wrap">
+	<div class="artist_base_info" >
+		<div class="bg_mask" style="background-image: url('{{data.avatar_url}}')">
+			<div class="pic"></div>
+			<div class="rgb"></div>
+		</div>
+		<div class="abi_con clearfix">
+			<div class="abi_pic"><img ng-src="{{data.avatar_url}}" alt=""></div>
+			<div class="abi_txt">
+				<h4 ng-bind="data.un"></h4>
+				<p class="genre" ng-repeat="item in data.genre_info">
+					<span ng-bind="item.genre_name"></span>
+				</p>
+				<p class="signature" ng-bind="data.signature || '暂无'"></p>
+			</div>
+		</div>
+		<ul class="audience_con">
+			<li>关注&#12288;{{data.follow_cnt}}</li>
+			<li class="bor"><span>+关注</span></li>
+			<li>粉丝&#12288;{{data.fans_cnt}}</li>
+		</ul>
+	</div>
+</div>

@@ -9,7 +9,7 @@ angular.module('app').controller('artistCtrl',['$http', '$scope',function($http,
     })
         .then(function(rs){
             console.log(rs.data.data);
-            $scope.artistInfo = rs.data.data
+            $scope.info = rs.data.data
         },function(err){
             console.log(err);
         });

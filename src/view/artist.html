@@ -1,3 +1,5 @@
-<div app-head title="{{artistInfo.user_info.un}}" back="#/main" bar="true"></div>
-
-<div app-foot></div>
+<div app-head title="{{info.user_info.un}}" back="#/main" bar="true" bg="false" border="false"></div>
+<div app-artist-base-info data="info.user_info"></div>
+<div app-artist-album data="info"></div>
+<div app-artist-songs data="info"></div>
+<div app-foot open="true" buy="false"></div>
