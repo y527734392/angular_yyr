@@ -1,0 +1,28 @@
+@import "normalize"; //去除默认样式
+@import "media"; //自适应
+@import "variable"; //全局变量 (颜色、class等)
+@import "common"; //全局变量 (颜色、class等)
+
+//自适应 rem比例
+@mw: unit(720/640*24,rem);
+//清浮动
+.clear {
+	clear: both;
+}
+.clearfix {
+	*height: 1%;
+	&:after {
+		display: block;
+		font-size: 0;
+		content: ".";
+		clear: both;
+		height: 0;
+		visibility: hidden;
+	}
+}
+//超出省略...
+.overflowall(){
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}

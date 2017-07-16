@@ -1,0 +1,22 @@
+{
+  "name": "webapp",
+  "authors": [
+    "ytt <muyiweb@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "requirejs": "^2.3.3",
+    "angular-ui-router": "^1.0.5"
+  }
+}

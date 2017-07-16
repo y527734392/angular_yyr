@@ -1,0 +1,13 @@
+<div class="wrap artist_wrap">
+	<ul class="artist_con">
+
+		<li ui-sref="artist({id:{{item.artist_id}}})" class="artist_list" ng-repeat="item in data.list">
+			<div class="artist_pic"><img ng-src="{{item.avatar_url}}" alt=""></div>
+			<div class="artist_info">
+				<h4 class="artist_name">{{item.un}}</h4>
+				<p><span>{{item.genre}}</span></p>
+			</div>
+			<div class="more"></div>
+		</li>
+	</ul>
+</div>

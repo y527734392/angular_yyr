@@ -1,0 +1,71 @@
+.artist_wrap {
+	.artist_con {
+		width: 100%;
+		.artist_list {
+			width: 100%;
+			height: 120/@mw;
+			padding: 10/@mw 0;
+			display: flex;
+			border-bottom: 1/@mw solid #e5e5e5;
+			.artist_pic {
+				width: 80/@mw;
+				height: 80/@mw;
+				border-radius: 50%;
+				overflow: hidden;
+				margin: 20/@mw 40/@mw 20/@mw 0;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.artist_info {
+				flex: 10;
+				.artist_name {
+					font-weight: normal;
+					font-size: 30/@mw;
+					line-height: 46/@mw;
+					margin: 10/@mw 0;
+				}
+				p {
+					font-size: 20/@mw;
+					span {
+						padding: 0 10/@mw;
+						margin-right: 10/@mw;
+						line-height: 30/@mw;
+						border:1/@mw solid @c;
+						color: @6;
+						border-radius: 10/@mw;
+					}
+				}
+			}
+			.more {
+				flex: 1;
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					right: 0;
+					width: 1px;
+					height: 8px;
+					background-color: @c;
+					-webkit-transform: rotate(-45deg);
+					margin-top: -6px;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					right: 0;
+					width: 1px;
+					height: 8px;
+					background-color: @c;
+					-webkit-transform: rotate(45deg);
+					margin-top: -1px;
+				}
+			}
+
+
+		}
+	}
+}

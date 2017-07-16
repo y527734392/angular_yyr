@@ -1,0 +1,87 @@
+.head {
+	width: 100%;
+	height: 90/@mw;
+	background: @f;
+	line-height: 90/@mw;
+	border-bottom: 1/@mw solid #ddd;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 10;
+	.login_info {
+		position: relative;
+		z-index: 2;
+		float: left;
+		padding: 15/@mw 0 15/@mw 20/@mw;
+		line-height: 60/@mw;
+		.artist_pic {
+			float: left;
+			width: 60/@mw;
+			height: 60/@mw;
+			border:1/@mw solid #ccc;
+			margin-right: 20/@mw;
+			border-radius: 50%;
+			overflow: hidden;
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.artist_name {
+			width: 100/@mw;
+			.overflowall();
+			float: left;
+		}
+	}
+	.back {
+		float: left;
+		width: 80/@mw;
+		height: 80/@mw;
+		margin: 5/@mw 0;
+		position: relative;
+		z-index: 2;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 1px;
+			height: 12px;
+			background-color: @c;
+			-webkit-transform: rotate(45deg);
+			margin-top: -8px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 1px;
+			height: 12px;
+			background-color: @c;
+			-webkit-transform: rotate(-45deg);
+			margin-top: 1px;
+		}
+	}
+	.head_title {
+		width: 100%;
+		position: absolute;
+		top:0;
+		left: 0;
+		text-align: center;
+		font-size: 30/@mw;
+		font-weight: normal;
+	}
+	.play_bar {
+		position: relative;
+		z-index: 2;
+		float: right;
+		width: 40/@mw;
+		height: 40/@mw;
+		padding: 25/@mw;
+		overflow: hidden;
+		background: url('/img/head/playbar_icon.png') no-repeat center;
+		background-size: 40/@mw;
+	}
+}
